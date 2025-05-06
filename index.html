@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crownforge - Minecraft Server</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/png">
+    <!-- Google Fonts - Press Start 2P for pixel style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="minecraft-container">
+        <!-- Header with Logo and Mascot -->
+        <header>
+            <div class="logo-container">
+                <img src="logo.png" alt="Crownforge Logo" class="logo">
+            </div>
+            <h1 class="server-title">CROWNFORGE</h1>
+        </header>
+
+        <!-- Welcome/Lore Section -->
+        <section class="minecraft-section" id="welcome">
+            <div class="section-title">
+                <h2>Welcome to Crownforge</h2>
+            </div>
+            <div class="section-content">
+                <p>Forge your destiny in a world where towns rise and fall, economies flourish, and players govern their own lands. Crownforge is a Towny-based Minecraft server focused on economy, conquest, and player-driven governance.</p>
+                <p>Join a thriving community where your actions shape the world. Build magnificent towns, form powerful nations, and leave your mark on the realm of Crownforge!</p>
+            </div>
+        </section>
+
+        <!-- Join the Server Section -->
+        <section class="minecraft-section" id="join">
+            <div class="section-title">
+                <h2>Join the Server</h2>
+            </div>
+            <div class="section-content">
+                <div class="server-info">
+                    <div class="server-ip">
+                        <h3>Server Address:</h3>
+                        <div class="minecraft-textbox" id="server-ip">mc.crownforge.org</div>
+                        <button class="minecraft-button" onclick="copyToClipboard('mc.crownforge.org')">Copy IP</button>
+                    </div>
+                    <div class="server-version">
+                        <h3>Version:</h3>
+                        <p>Minecraft Java Edition 1.21.5</p>
+                    </div>
+                </div>
+                <div class="discord-invite">
+                    <h3>Join our Discord:</h3>
+                    <a href="https://discord.gg/arxgzVQKK8" target="_blank" class="minecraft-button discord-button">
+                        <span class="discord-icon">ᚱ</span> Join Discord
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="minecraft-section" id="features">
+            <div class="section-title">
+                <h2>Server Features</h2>
+            </div>
+            <div class="section-content features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon towny-icon"></div>
+                    <h3>Towny System</h3>
+                    <p>Create towns, claim land, and build your own nation with our advanced Towny system.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon economy-icon"></div>
+                    <h3>Economy</h3>
+                    <p>Robust economy with jobs, shops, and player-driven markets. Earn money through various activities!</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon events-icon"></div>
+                    <h3>Regular Events</h3>
+                    <p>Participate in server-wide events, competitions, and special challenges with awesome rewards.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plugin Guide Section -->
+        <section class="minecraft-section" id="plugins">
+            <div class="section-title">
+                <h2>Plugin Guide</h2>
+            </div>
+            <div class="section-content">
+                <p>Crownforge features a carefully selected set of plugins to enhance your gameplay experience:</p>
+                <div class="plugin-list">
+                    <div class="plugin-item">
+                        <h3>Towny</h3>
+                        <p>Core land and nation management with town creation, land claiming, and plot permissions.</p>
+                        <div class="command-example">/town new &lt;name&gt;</div>
+                    </div>
+                    <div class="plugin-item">
+                        <h3>Economy System</h3>
+                        <p>Jobs, passive income, and player-driven markets to build your wealth.</p>
+                    </div>
+                    <div class="plugin-item">
+                        <h3>Protection</h3>
+                        <p>Comprehensive grief prevention and land protection systems.</p>
+                    </div>
+                </div>
+                <a href="plugin-guide.html" class="minecraft-button">View Full Plugin Guide</a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Crownforge</h3>
+                    <p>&copy; 2025 Crownforge</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="rules.html">Rules</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Social</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-icon twitter">Twitter</a>
+                        <a href="https://discord.gg/arxgzVQKK8" class="social-icon discord">Discord</a>
+                        <a href="#" class="social-icon youtube">YouTube</a>
+                        <a href="https://bsky.app/profile/crownforge.org" class="social-icon bluesky">Bluesky</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

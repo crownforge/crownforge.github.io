@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plugin Guide - Crownforge</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/png">
+    <!-- Google Fonts - Press Start 2P for pixel style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="minecraft-container">
+        <!-- Header with Logo -->
+        <header>
+            <div class="logo-container">
+                <a href="index.html"><img src="logo.png" alt="Crownforge Logo" class="logo"></a>
+            </div>
+            <h1 class="server-title">CROWNFORGE</h1>
+        </header>
+
+        <!-- Plugin Guide Section -->
+        <section class="minecraft-section" id="plugin-guide">
+            <div class="section-title">
+                <h2>Plugin Guide</h2>
+            </div>
+            <div class="section-content">
+                <p>Last Updated: May 6, 2025</p>
+                <p>Crownforge uses a carefully selected set of plugins to enhance your gameplay experience. This guide provides information about our core plugins and their basic commands.</p>
+                
+                <div class="plugin-category">
+                    <h3>Core Plugins</h3>
+                    
+                    <div class="plugin-details">
+                        <h4>1. Towny</h4>
+                        <p>Towny is our core land and nation management plugin. It allows players to create towns, claim land, and form nations.</p>
+                        
+                        <div class="command-section">
+                            <h5>Key Commands:</h5>
+                            <div class="command-example">/town new &lt;name&gt;</div>
+                            <p>Creates a new town with the specified name.</p>
+                            
+                            <div class="command-example">/town claim</div>
+                            <p>Claims the current chunk for your town.</p>
+                            
+                            <div class="command-example">/town add &lt;player&gt;</div>
+                            <p>Invites a player to your town.</p>
+                            
+                            <div class="command-example">/plot claim</div>
+                            <p>Claims a plot within a town (if you have permission).</p>
+                            
+                            <div class="command-example">/nation new &lt;name&gt;</div>
+                            <p>Creates a new nation with your town as the capital.</p>
+                            
+                            <div class="command-example">/towny map</div>
+                            <p>Shows a map of claimed land around you.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="plugin-details">
+                        <h4>2. Economy System</h4>
+                        <p>Our economy system combines several plugins to create a robust player-driven economy with jobs, shops, and passive income.</p>
+                        
+                        <div class="command-section">
+                            <h5>Key Commands:</h5>
+                            <div class="command-example">/balance</div>
+                            <p>Check your current balance.</p>
+                            
+                            <div class="command-example">/pay &lt;player&gt; &lt;amount&gt;</div>
+                            <p>Send money to another player.</p>
+                            
+                            <div class="command-example">/jobs browse</div>
+                            <p>View available jobs you can join.</p>
+                            
+                            <div class="command-example">/jobs join &lt;job&gt;</div>
+                            <p>Join a specific job to earn money.</p>
+                            
+                            <div class="command-example">/jobs stats</div>
+                            <p>View your job statistics and earnings.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="plugin-details">
+                        <h4>3. Protection Systems</h4>
+                        <p>We use multiple protection systems to ensure your builds and items are safe from griefing and theft.</p>
+                        
+                        <div class="command-section">
+                            <h5>Key Commands:</h5>
+                            <div class="command-example">/plot set perm &lt;group&gt; &lt;on/off&gt;</div>
+                            <p>Set permissions for your plot (build, destroy, switch, etc.).</p>
+                            
+                            <div class="command-example">/cmodify &lt;player&gt;</div>
+                            <p>Add a player to your chest protection.</p>
+                            
+                            <div class="command-example">/cprivate</div>
+                            <p>Create a private chest or container.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="plugin-category">
+                    <h3>Utility Plugins</h3>
+                    
+                    <div class="plugin-details">
+                        <h4>4. EssentialsX</h4>
+                        <p>EssentialsX provides basic commands and quality-of-life features.</p>
+                        
+                        <div class="command-section">
+                            <h5>Key Commands:</h5>
+                            <div class="command-example">/home</div>
+                            <p>Teleport to your home.</p>
+                            
+                            <div class="command-example">/sethome</div>
+                            <p>Set your home location.</p>
+                            
+                            <div class="command-example">/warp</div>
+                            <p>View available warps or teleport to one.</p>
+                            
+                            <div class="command-example">/msg &lt;player&gt; &lt;message&gt;</div>
+                            <p>Send a private message to another player.</p>
+                            
+                            <div class="command-example">/spawn</div>
+                            <p>Teleport to the server spawn point.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="plugin-details">
+                        <h4>5. DiscordSRV</h4>
+                        <p>Links in-game chat to our Discord server channels.</p>
+                        
+                        <div class="command-section">
+                            <h5>Key Commands:</h5>
+                            <div class="command-example">/discord link</div>
+                            <p>Link your Minecraft account to your Discord account.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="plugin-category">
+                    <h3>Admin Plugins</h3>
+                    <p>These plugins are primarily used by server staff but are listed here for transparency:</p>
+                    
+                    <ul class="admin-plugins">
+                        <li><strong>LuckPerms</strong> - Permissions and group management</li>
+                        <li><strong>ClearLag</strong> - Reduces lag by clearing dropped items/entities</li>
+                        <li><strong>spark</strong> - Server performance profiler</li>
+                    </ul>
+                </div>
+                
+                <div class="plugin-note">
+                    <h3>Plugin Requests</h3>
+                    <p>If you have suggestions for additional plugins that would enhance the server experience, please share them on our Discord server. We regularly review community suggestions for server improvements.</p>
+                </div>
+                
+                <div class="navigation-buttons">
+                    <a href="index.html" class="minecraft-button">Back to Home</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Crownforge</h3>
+                    <p>&copy; 2025 Crownforge</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="rules.html">Rules</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Social</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-icon twitter">Twitter</a>
+                        <a href="https://discord.gg/arxgzVQKK8" class="social-icon discord">Discord</a>
+                        <a href="#" class="social-icon youtube">YouTube</a>
+                        <a href="https://bsky.app/profile/crownforge.org" class="social-icon bluesky">Bluesky</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
