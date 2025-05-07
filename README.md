@@ -39,11 +39,17 @@ To update the content:
 - `index.html` - Main HTML structure
 - `styles.css` - CSS styling
 - `script.js` - JavaScript functionality
-- `logo.png` - Server logo
-- `dirt-bg.png` - Background texture
-- `towny-icon.png` - Icon for Towny feature
-- `economy-icon.png` - Icon for Economy feature
-- `events-icon.png` - Icon for Events feature
+- `terms-of-service.html` - Terms of Service page
+- `rules.html` - Server Rules page
+- `plugin-guide.html` - Detailed Plugin Guide page
+- `style-guide.html` - Font and Color Style Guide
+- `.gitignore` - Git ignore file
+- `images/` - Directory containing all image assets:
+  - `logo.png` - Server logo
+  - `dirt-bg.png` - Background texture
+  - `towny-icon.png` - Icon for Towny feature
+  - `economy-icon.png` - Icon for Economy feature
+  - `events-icon.png` - Icon for Events feature
 
 ## Browser Compatibility
 

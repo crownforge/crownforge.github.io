@@ -22,7 +22,7 @@ body {
     background-color: var(--deep-teal);
     color: var(--white);
     line-height: 1.6;
-    background-image: url('dirt-bg.png');
+    background-image: url('images/dirt-bg.png');
     background-repeat: repeat;
     padding: 20px;
 }
@@ -190,15 +190,15 @@ header {
 }
 
 .towny-icon {
-    background-image: url('towny-icon.png');
+    background-image: url('images/towny-icon.png');
 }
 
 .economy-icon {
-    background-image: url('economy-icon.png');
+    background-image: url('images/economy-icon.png');
 }
 
 .events-icon {
-    background-image: url('events-icon.png');
+    background-image: url('images/events-icon.png');
 }
 
 .feature-card h3 {
