@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Crownforge is a Towny-based Minecraft server focused on economy, conquest, and player-driven governance. Join our thriving community today!">
     <title>Crownforge - Minecraft Server</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/logo.png" type="image/png">
@@ -10,13 +11,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Preload critical assets -->
+    <link rel="preload" href="images/logo.png" as="image">
+    <link rel="preload" href="images/dirt-bg.png" as="image">
 </head>
 <body>
     <div class="minecraft-container">
         <!-- Header with Logo and Mascot -->
         <header>
             <div class="logo-container">
-                <img src="images/logo.png" alt="Crownforge Logo" class="logo">
+                <img src="images/logo.png" 
+                     srcset="images/logo.png 144w"
+                     sizes="(max-width: 480px) 100px, (max-width: 768px) 120px, 200px"
+                     alt="Crownforge Logo" 
+                     class="logo"
+                     width="144" 
+                     height="144"
+                     loading="eager">
             </div>
             <h1 class="server-title">CROWNFORGE</h1>
         </header>
@@ -42,7 +53,7 @@
                     <div class="server-ip">
                         <h3>Server Address:</h3>
                         <div class="minecraft-textbox" id="server-ip">mc.crownforge.org</div>
-                        <button class="minecraft-button" onclick="copyToClipboard('mc.crownforge.org')">Copy IP</button>
+                        <button class="minecraft-button" onclick="copyToClipboard('mc.crownforge.org')">Copy URL</button>
                     </div>
                     <div class="server-version">
                         <h3>Version:</h3>
@@ -65,48 +76,23 @@
             </div>
             <div class="section-content features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon towny-icon"></div>
+                    <div class="feature-icon towny-icon" aria-label="Towny System Icon"></div>
                     <h3>Towny System</h3>
                     <p>Create towns, claim land, and build your own nation with our advanced Towny system.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon economy-icon"></div>
+                    <div class="feature-icon economy-icon" aria-label="Economy Icon"></div>
                     <h3>Economy</h3>
                     <p>Robust economy with jobs, shops, and player-driven markets. Earn money through various activities!</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon events-icon"></div>
+                    <div class="feature-icon events-icon" aria-label="Events Icon"></div>
                     <h3>Regular Events</h3>
                     <p>Participate in server-wide events, competitions, and special challenges with awesome rewards.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Plugin Guide Section -->
-        <section class="minecraft-section" id="plugins">
-            <div class="section-title">
-                <h2>Plugin Guide</h2>
-            </div>
-            <div class="section-content">
-                <p>Crownforge features a carefully selected set of plugins to enhance your gameplay experience:</p>
-                <div class="plugin-list">
-                    <div class="plugin-item">
-                        <h3>Towny</h3>
-                        <p>Core land and nation management with town creation, land claiming, and plot permissions.</p>
-                        <div class="command-example">/town new &lt;name&gt;</div>
-                    </div>
-                    <div class="plugin-item">
-                        <h3>Economy System</h3>
-                        <p>Jobs, passive income, and player-driven markets to build your wealth.</p>
-                    </div>
-                    <div class="plugin-item">
-                        <h3>Protection</h3>
-                        <p>Comprehensive grief prevention and land protection systems.</p>
-                    </div>
-                </div>
-                <a href="plugin-guide.html" class="minecraft-button">View Full Plugin Guide</a>
-            </div>
-        </section>
 
         <!-- Footer -->
         <footer>
@@ -119,15 +105,12 @@
                     <h3>Links</h3>
                     <ul>
                         <li><a href="terms-of-service.html">Terms of Service</a></li>
-                        <li><a href="rules.html">Rules</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h3>Social</h3>
                     <div class="social-links">
-                        <a href="#" class="social-icon twitter">Twitter</a>
                         <a href="https://discord.gg/arxgzVQKK8" class="social-icon discord">Discord</a>
-                        <a href="#" class="social-icon youtube">YouTube</a>
                         <a href="https://bsky.app/profile/crownforge.org" class="social-icon bluesky">Bluesky</a>
                     </div>
                 </div>
@@ -135,6 +118,6 @@
         </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
