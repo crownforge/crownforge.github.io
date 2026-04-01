@@ -337,6 +337,82 @@ header {
     margin: 20px 0;
 }
 
+/* How to Join Steps */
+.steps-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: var(--deep-teal);
+    border: var(--pixel-border);
+    padding: 20px;
+}
+
+.step-number {
+    font-size: 2rem;
+    color: var(--gold);
+    text-shadow: 2px 2px 0 var(--black);
+    min-width: 50px;
+    text-align: center;
+    line-height: 1;
+}
+
+.step-text h3 {
+    color: var(--gold);
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.step-text p {
+    margin-bottom: 0;
+}
+
+.step-text a {
+    color: var(--gold);
+    text-decoration: underline;
+}
+
+.step-text a:hover {
+    color: var(--white);
+}
+
+/* Rules Quick List */
+.rules-quick {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.rule-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background-color: var(--deep-teal);
+    border: var(--pixel-border);
+    padding: 15px;
+}
+
+.rule-icon {
+    color: var(--gold);
+    font-size: 1rem;
+    min-width: 20px;
+}
+
+.section-content a {
+    color: var(--gold);
+    text-decoration: underline;
+}
+
+.section-content a:hover {
+    color: var(--white);
+}
+
 /* Footer */
 footer {
     margin-top: 60px;
