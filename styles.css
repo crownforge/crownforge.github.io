@@ -2,12 +2,12 @@
 
 :root {
     --gold: #FFD54F;
-    --burnt-orange: #43A047;
-    --dark-gray: #33472E;
-    --deep-teal: #263D1F;
-    --light-gray: #E0E0E0;
-    --black: #1A1A1A;
-    --white: #FFFFFF;
+    --burnt-orange: #5C3D8F;
+    --dark-gray: #2A2A3D;
+    --deep-teal: #1E1E30;
+    --light-gray: #D4D4E0;
+    --black: #0F0F18;
+    --white: #F0F0F5;
     --pixel-border: 4px solid var(--black);
     
     /* Responsive spacing variables */
@@ -28,9 +28,7 @@ body {
     background-color: var(--deep-teal);
     color: var(--white);
     line-height: 1.6;
-    background-image: url('images/dirt-bg.png');
-    background-repeat: repeat;
-    background-size: 32px 32px; /* Optimize background pattern size */
+    background-image: none;
     padding: 20px;
     overflow-x: hidden; /* Prevent horizontal scrolling on small devices */
 }
@@ -40,9 +38,9 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(15, 15, 24, 0.6);
     border: var(--pixel-border);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 30px rgba(92, 61, 143, 0.15);
 }
 
 /* Header styling */
@@ -77,7 +75,7 @@ header {
 .server-title {
     font-size: 3rem;
     color: var(--gold);
-    text-shadow: 3px 3px 0 var(--black), 0 0 20px rgba(255, 213, 79, 0.3);
+    text-shadow: 3px 3px 0 var(--black), 0 0 25px rgba(255, 213, 79, 0.25);
     letter-spacing: 4px;
     margin-top: 10px;
     text-align: center;
@@ -159,7 +157,7 @@ header {
 }
 
 .minecraft-button:hover {
-    background-color: var(--burnt-orange);
+    background-color: #FFC107;
     transform: translate(2px, 2px);
     box-shadow: 2px 2px 0 var(--black);
 }
@@ -683,5 +681,5 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #4A9E40;
+    background-color: #FFC107;
 }
