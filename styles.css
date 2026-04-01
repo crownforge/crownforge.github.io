@@ -1,12 +1,12 @@
 /* Minecraft-inspired CSS for Crownforge */
 
 :root {
-    --gold: #FDBB30;
-    --burnt-orange: #3A7D32;
-    --dark-gray: #2E3B2E;
-    --deep-teal: #1E3322;
-    --light-gray: #C6C6C6;
-    --black: #000000;
+    --gold: #FFD54F;
+    --burnt-orange: #43A047;
+    --dark-gray: #33472E;
+    --deep-teal: #263D1F;
+    --light-gray: #E0E0E0;
+    --black: #1A1A1A;
     --white: #FFFFFF;
     --pixel-border: 4px solid var(--black);
     
@@ -40,7 +40,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.55);
     border: var(--pixel-border);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
@@ -77,7 +77,7 @@ header {
 .server-title {
     font-size: 3rem;
     color: var(--gold);
-    text-shadow: 4px 4px 0 var(--black);
+    text-shadow: 3px 3px 0 var(--black), 0 0 20px rgba(255, 213, 79, 0.3);
     letter-spacing: 4px;
     margin-top: 10px;
     text-align: center;
@@ -180,6 +180,7 @@ header {
 
 .discord-icon {
     margin-right: 5px;
+    vertical-align: middle;
 }
 
 /* Features Section */
@@ -405,10 +406,6 @@ footer {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286z"></path></svg>');
 }
 
-.social-icon.bluesky {
-    background-color: #0085FF;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"/><path d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4z"/></svg>');
-}
 
 /* Tooltip style (Minecraft-like hover effect) */
 [data-tooltip] {
