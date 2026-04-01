@@ -2,9 +2,9 @@
 
 :root {
     --gold: #FDBB30;
-    --burnt-orange: #E67700;
-    --dark-gray: #3B3B3B;
-    --deep-teal: #2D3D3D;
+    --burnt-orange: #3A7D32;
+    --dark-gray: #2E3B2E;
+    --deep-teal: #1E3322;
     --light-gray: #C6C6C6;
     --black: #000000;
     --white: #FFFFFF;
@@ -172,6 +172,10 @@ header {
 .discord-button {
     background-color: #5865F2;
     color: var(--white);
+}
+
+.discord-button:hover {
+    background-color: #4752C4;
 }
 
 .discord-icon {
@@ -606,5 +610,5 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--burnt-orange);
+    background-color: #4A9E40;
 }
